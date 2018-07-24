@@ -1,0 +1,248 @@
+/*CSS file*/
+{
+	padding : 0;
+	margin : 0;
+	border : 0;
+}
+body{
+	background-color : white;
+	background-attachment : scroll;
+	background-size : 100% auto;
+	padding : 0;
+	margin : 0;
+	border : 0;
+}
+.blended_grid{
+	display : block;
+	width : 100%;
+	overflow : auto;
+	margin : 0 auto;
+}
+.fixed_top{
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+.pageHeader{
+	background-color : #176713; /*#044601 final: #104a0d*/
+	float : right;
+	clear : none;
+	height : 100px;
+	width : 100%;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+}
+.pageHeader a{
+    float: top;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+	position: relative;
+	top: 10px;
+	left: 80px;
+	line-height: 1em;
+}
+img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+	position: absolute;
+	z-index: 2;
+    top: 15px;
+	left: 590px;
+	}
+.pageHeaderSub{
+	background-color : #176713; /*#93D290*/
+	float : right;
+	clear : none;
+	position: fixed;
+    top: 111px;
+	right: 0px;
+	height : 30px;
+	width : 1149px;
+	border-top: 1px solid white;
+}
+.pageHeaderSub a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.pageHeaderSub a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pageHeaderSub a.active {
+    background-color: #358735;
+    color: white;
+}
+.pageBarLeft{
+	float : left;
+	clear : none;
+	min-width : 80px;
+	min-height : 80px;
+}
+.pageBarLeftTop{
+	background-color : #95A5A6;
+	float : left;
+	clear : none;
+	height : 105px;
+	width : 200px;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	position: fixed;
+	top: 110px;
+}
+.pageBarLeftBottom{
+	background-color : #bdc3c7;
+	float : left;
+	clear : none;
+	height : 800px;
+	width : 200px;
+	border-top: 1px solid white;
+	position: fixed;
+	top: 215px;
+}
+.pageBarLeftBottom a{
+    float: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.pageBarLeftBottom a:hover { 
+  background: #104a0d; 
+  color: white;
+}
+.logoutbtn {
+	background-color : #bdc3c7;
+	font-family: Roboto;
+	font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 76px;
+    text-decoration: none;
+	position: relative;
+	z-index: 2;
+	border-color: black;
+	border: 1px;
+}
+.logoutbtn:hover { 
+  background: #104a0d; 
+  color: white;
+}
+.pageContent{
+	background-color : white;
+	float : left;
+	clear : none;
+	height : 800px;
+	width : 100%;
+	position: absolute;
+	z-index: -1;
+	top: 140px;
+	left: 201px;
+	text-align: center;
+}
+.pageFooter{
+	background-color : #6C7A89;
+	float : right;
+	clear : none;
+	height : 100px;
+	width : 90%;
+}
+.pageFooterSub{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : right;
+	clear : none;
+	height : 50px;
+	width : 90%;
+}
+.breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	position: relative;
+	left: 0px;
+	z-index: 2;
+	margin: 0;
+	vertical-align: top;
+	font: 18px Sans-Serif;
+}
+.breadcrumb li { 
+  float: left;
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 5px 0 5px 40px;
+  background: brown; /* fallback color */
+  background: hsla(117, 69%, 24%, 1); 
+  position: relative; 
+  left: -39px;
+  display: inline-block;
+  float: left;
+}
+.breadcrumb li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(117, 69%, 24%, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.breadcrumb li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+}
+.breadcrumb li:first-child a {
+  padding-left: 15px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsla(117, 49%, 36%, 1); }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(117, 49%, 36%, 1); }
+.breadcrumb li:nth-child(3) a       { background:        hsla(117, 33%, 51%, 1); }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(117, 33%, 51%, 1); }
+.breadcrumb li:nth-child(4) a       { background:        hsla(117, 41%, 67%, 1); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(117, 41%, 67%, 1); }
+.breadcrumb li:nth-child(5) a       { background:        hsla(116, 22%, 72%, 1); }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsla(116, 22%, 72%, 1); }
+.breadcrumb li:last-child a {
+  background: hsla(116, 36%, 100%, 1); !important;
+  color: black;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: double underline;
+}
+.breadcrumb li:last-child a::after { 
+border-left-color: hsla(116, 36%, 100%, 1);
+}
+.breadcrumb li a:hover { 
+  background: #104a0d; 
+  color: white;
+}
+.breadcrumb li a:hover:after { 
+  border-left-color: #104a0d !important; 
+} 	
